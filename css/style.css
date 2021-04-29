@@ -1098,6 +1098,7 @@ body.fp-viewing-footer #menu {
   text-transform: uppercase;
   color: var(--color-footer);
   margin-bottom: 55px;
+  padding: 0;
 }
 #form-wanna-sell label {
   font-family: var(--font-family-NotoSerif);
@@ -1150,6 +1151,9 @@ body.fp-viewing-footer #menu {
   height: 75px;
   display: inline-block;
   margin: 0 auto 42px;
+}
+.get-touch-with-us figure img {
+  height:100%
 }
 .get-touch-with-us h2.heading {
   font-family: var(--font-family-NotoSerif);
@@ -1614,6 +1618,28 @@ header .header__menu--mid .menu-mobile .header__menu--item .icon-bot {
 #fullpage .footer .footer__top .footer__top--left a.logo-chicken {
   margin-bottom: 5px;
 }
+#detail .packs,
+#detail .top-header,
+#detail .content {
+  position: relative;
+}
+
+#detail .packs::before,
+#detail .top-header::before,
+#detail .content::before {
+  content:'';
+  background-image: url(../img/BG_Texture.png);
+  width:  100%;
+  height: 100%;
+  display: block;
+  position: absolute; 
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 @media (min-width: 768px) {
   .heading-bery {
     font-size: 68px;
@@ -1800,7 +1826,7 @@ header .header__menu--mid .menu-mobile .header__menu--item .icon-bot {
     left: -10px;
   }
   #fullpage .footer {
-    padding-top: 4rem;
+    padding-top: 9rem;
   }
   #fullpage .footer .footer__top--right .contact-us h2 {
     font-size: 42px;

@@ -1088,7 +1088,7 @@ body.fp-viewing-footer #menu {
 }
 #form-wanna-sell h1.heading {
   word-break: break-word;
-  font-family: var(--font-family-NotoSerifItalic);
+  font-family: var(--font-family-NotoSerifBoldItalic);
   font-style: italic;
   font-weight: bold;
   font-size: 60px;

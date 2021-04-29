@@ -1596,6 +1596,12 @@ header .header__menu--mid .menu-mobile .header__menu--item .icon-bot {
 #menu.display {
   display:block;
 }
+#fullpage .footer {
+  padding-top: 0;
+}
+#fullpage .footer .footer__top--right .contact-us h2 {
+  font-size: 36px;
+}
 @media (min-width: 768px) {
   .heading-bery {
     font-size: 68px;
@@ -1781,11 +1787,15 @@ header .header__menu--mid .menu-mobile .header__menu--item .icon-bot {
     top: 0;
     left: -10px;
   }
+  #fullpage .footer {
+    padding-top: 4rem;
+  }
+  #fullpage .footer .footer__top--right .contact-us h2 {
+    font-size: 42px;
+  }
 }
 @media (min-width: 992px) {
-  .header__menu--left { 
-
-  }
+  
 }
 @media (min-width: 1024px) {
   header .header__menu--mid .shop-btn {

@@ -658,7 +658,7 @@ section.carousels .fp-tableCell {
 }
 #fullpagestory .section.ourteam {
   background-image: url(../img/ourteam-bg.png);
-  background-size: cover;
+  background-size: auto;
   background-repeat: no-repeat;
   background-position: center;
   height: auto !important;

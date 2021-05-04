@@ -1669,7 +1669,7 @@ header .header__menu--mid .menu-mobile .header__menu--item .icon-bot {
   animation: lacbia 2; /* referring directly to the animation's @keyframe declaration */
   animation-duration: 0.2s; /* don't forget to set a duration! */
 }
-#home-beer section {
+#home-beer section .row {
   padding: 0 45px;
 }
 @media (min-width: 768px) {

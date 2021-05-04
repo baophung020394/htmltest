@@ -2,6 +2,7 @@
 if (typeof App === "undefined") var App = {};
 $(document).ready(() => {
   $(window).scroll(function () {
+    var footerTop = $(".footer").height();
     var scroll = $(window).scrollTop();
     if (scroll > 0) {
       $(
@@ -12,6 +13,25 @@ $(document).ready(() => {
         ".home .header__menu.scroll-menu .header__menu--mainmenu.menu-desk"
       ).css("display", "flex");
     }
+
+    if (scroll > 2300) {
+      $("#menu").addClass("hidden");
+    } else {
+      $("#menu").removeClass("hidden");
+    }
+  });
+  if ($(window).scrollTop() > 2300) {
+    $("#menu").addClass("hidden");
+  } else {
+    $("#menu").removeClass("hidden");
+  }
+  $('#home-beer .beer .beer__container .bg-beer .img-main').removeClass('animation-lacbia');
+  $('#home-beer .beer .beer__container .bg-beer').mouseover(function () {
+    $(this).find('.img-main').removeClass('animation-lacbia');
+    $('#home-beer .beer .beer__container .bg-beer .img-main').removeClass('animation-lacbia');
+  });
+  $('#home-beer .beer .beer__container .bg-beer').mouseleave(function () {
+    $(this).find('.img-main').addClass('animation-lacbia');
   });
   // Carousel
   $(".carousel-home").owlCarousel({

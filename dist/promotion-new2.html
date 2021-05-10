@@ -20,11 +20,15 @@
     <link rel="stylesheet" href="../css/owl.theme.default.min.css" />
     <link rel="stylesheet" href="../css/owl.theme.green.min.css" />
     <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.css"
+      rel="stylesheet"
+    />
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <link rel="stylesheet" href="../css/style.css" />
-    <title>Home Beer</title>
+    <title>Document</title>
   </head>
   <body>
     <header class="header__menu scroll-menu">
@@ -128,100 +132,102 @@
         </div>
       </div>
     </header>
-    <div id="detail" style="background-color: #ffc700">
-      <section
-        class="banner banner-container"
-        style="background-image: url(../img/banner-beers.png)"
+    <section
+      class="banner banner-container"
+      style="background-image: url(../img/banner-promotion.png)"
+    >
+      <h1>Community</h1>
+    </section>
+    <div class="popups-signup">
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="subscribe"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
       >
-        <h1>Blonde</h1>
-      </section>
-      <div class="top-header">
-        <h1 style="color: #151209">BLONDE</h1>
-        <div class="groups">
-          <div class="deg">
-            <p style="color: #151209">ABV</p>
-            <span style="color: #151209">5%</span>
-          </div>
-          <div class="deg">
-            <p style="color: #151209">IBU</p>
-            <span style="color: #151209">18</span>
-          </div>
-        </div>
-      </div>
-      <div class="content">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 col-md-6">
-              <div class="images">
-                <img src="../img/img-detail.png" alt="" />
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <form>
+              <img src="../img/chicken-subscribe.png" alt="" />
+              <h2 class="heading">SIGN UP FOR OUR NEWLETTER</h2>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Input Your Name">
               </div>
-            </div>
-            <div class="col-12 col-md-6">
-              <div class="information">
-                <h2 style="color: #151209">VERY CLEAN ANDCRISP FLAVOR WITH A HINT OF CITRUS</h2>
-                <p style="color: #151209">
-                  Our blonde is made for the heat of Saigon. One crisp sip cuts
-                  through the stress of a long day. Blonde is very clean, very
-                  clear with a hint of citrus. This is not a lager, this is an
-                  ale with a lot of malt character. Rooster Blonde, the perfect
-                  all day drinker.
-                </p>
-                <a href="#" class="btn-shopnow"
-                  >Shop now <img src="../img/right-aroow.png" alt=""
-                /></a>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Input Your Email">
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="packs">
-        <div class="container">
-          <div class="row" style="align-items: center">
-            <h3 style="color: #151209">Available in:</h3>
-            <div class="col-12 col-md-12">
-              <div class="row">
-                <div class="col-12 col-md-3 img-packs">
-                  <img src="../img/lonbia-detail.png" alt="" />
-                  <h3 style="color: #151209">Keg</h3>
-                </div>
-                <div class="col-12 col-md-3 img-packs">
-                  <img src="../img/thung4lon.png" alt="" />
-                  <h3 style="color: #151209">4 pack</h3>
-                </div>
-                <div class="col-12 col-md-3 img-packs">
-                  <img src="../img/thung12lon.png" alt="" />
-                  <h3 style="color: #151209">12 pack</h3>
-                </div>
-                <div class="col-12 col-md-3 img-packs">
-                  <img src="../img/36goi.png" alt="" />
-                  <h3 style="color: #151209">36 pack</h3>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="other-beers" style="background-color: #fcf9e3">
-        <div class="container">
-          <div class="row">
-            <h2>OTHER BEERS</h2>
-            <div class="col-12 col-md-6 col-lg-3 img-beers">
-              <img src="../img/bia-blonde.png" alt="" />
-            </div>
-            <div class="col-12 col-md-6 col-lg-3 img-beers">
-              <img src="../img/bia-dark.png" alt="" />
-            </div>
-            <div class="col-12 col-md-6 col-lg-3 img-beers">
-              <img src="../img/bia-ipa.png" alt="" />
-            </div>
-            <div class="col-12 col-md-6 col-lg-3 img-beers">
-              <img src="../img/bia-pale.png" alt="" />
-            </div>
+              <a href="#" class="btn-submit">SUBSCRIBE</a>
+            </form>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ><img src="../img/bx_bx-menu.png" alt=""></button>
           </div>
         </div>
       </div>
     </div>
-    <footer class="footer">
+    <div id="fullpagepromotion">
+      <section class="content promotion-new">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-3 promotion-new-box">
+              <a href="#">
+                <img src="../img/pmn-1.png" alt="" />
+                <h3 class="heading">PROMOTION</h3>
+              </a>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 promotion-new-box">
+              <a href="#">
+                <img src="../img/pmn-2.png" alt="" />
+                <h3 class="heading">BLOG</h3>
+              </a>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 promotion-new-box">
+              <a href="#">
+                <img src="../img/pmn-3.png" alt="" />
+                <h3 class="heading">EVENT</h3>
+              </a>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 promotion-new-box">
+              <a href="#">
+                <img src="../img/pmn-4.png" alt="" />
+                <h3 class="heading">Customer Spotlight</h3>
+              </a>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 promotion-new-box">
+              <a href="#">
+                <img src="../img/pmn-5.png" alt="" />
+                <h3 class="heading">Sponsorship</h3>
+              </a>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 promotion-new-box">
+              <a href="#">
+                <img src="../img/pmn-6.png" alt="" />
+                <h3 class="heading">Flagships</h3>
+              </a>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 promotion-new-box">
+              <a href="#">
+                <img src="../img/pmn-7.png" alt="" />
+                <h3 class="heading">MEDIA</h3>
+              </a>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3 promotion-new-box">
+              <a href="#" class="btn-orange">
+                <span>KEG PARTY AT HOME</span>
+                <img src="../img/muiten.png" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer class="footer vertical-scrolling">
       <div class="footer__top">
         <div class="footer__top--left">
           <a href="#" class="logo-chicken">
@@ -298,6 +304,7 @@
       integrity="sha512-0xW5KFMtT462F65vVvIejNawM1U2Fp/yhItmQVFUwdYP+R9tQFCn4QtLEhkp6RoGovZ6YCvbxy+GVCtGv0+nvA=="
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.min.js"></script>
     <script src="../js/main.js"></script>
   </body>
 </html>

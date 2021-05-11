@@ -299,7 +299,7 @@ header .header__menu--mainmenu {
   width: 100%;
 }
 .owl-item .item h1 {
-  bottom: 150px;
+  bottom: 170px;
 }
 .carousel-information .owl-dots,
 .carousel-home .owl-dots {
@@ -310,7 +310,7 @@ header .header__menu--mainmenu {
   z-index: 9999;
 }
 .carousel-home .owl-dots {
-  bottom: 100px;
+  bottom: 120px;
 }
 .carousel-information .owl-dots button span,
 .carousel-home .owl-dots button span {
@@ -1625,6 +1625,7 @@ header .header__menu--mid .menu-mobile .header__menu--item .icon-bot {
 }
 #fullpage .footer {
   padding-top: 60px;
+  height: 1000px !important;
 }
 #fullpage .footer .footer__top--right .contact-us h2 {
   font-size: 36px;

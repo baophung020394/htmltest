@@ -203,6 +203,7 @@ header .header__menu--mainmenu {
 }
 .footer .footer__top .footer__top--left a.logo-text img {
   width: 274px;
+  margin-bottom: 15px;
 }
 .footer .footer__top .footer__top--left a.logo-chicken {
   margin-bottom: 30px;
@@ -1623,7 +1624,7 @@ header .header__menu--mid .menu-mobile .header__menu--item .icon-bot {
   display: block;
 }
 #fullpage .footer {
-  padding-top: 0;
+  padding-top: 60px;
 }
 #fullpage .footer .footer__top--right .contact-us h2 {
   font-size: 36px;
@@ -1633,6 +1634,7 @@ header .header__menu--mid .menu-mobile .header__menu--item .icon-bot {
 }
 #fullpage .footer .footer__top .footer__top--left a.logo-chicken p {
   line-height: 22px;
+  margin: 15px 0;
 }
 #fullpage .footer .footer__top--right .contact-us {
   margin-bottom: 0;
@@ -1908,6 +1910,9 @@ header .header__menu--mid {
     width: 30px;
     height: 30px;
   }
+  #fullpage .footer .footer__top .footer__top--left a.logo-chicken p { 
+    margin: 0;
+  }
   header .header__menu--mid {
     position: unset;
   }
@@ -2087,6 +2092,7 @@ header .header__menu--mid {
   }
   .footer .footer__top .footer__top--left a.logo-text img {
     width: 315px;
+    margin-bottom: 0;
   }
   .footer .footer__top--right .form-contact .form-control input {
     margin-bottom: 0;

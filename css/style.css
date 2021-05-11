@@ -1626,7 +1626,8 @@ header .header__menu--mid .menu-mobile .header__menu--item .icon-bot {
 #fullpage .footer {
   position: unset;
   padding-top: 60px;
-  height: 1000px !important;
+  padding-bottom: 100px;
+  height: 1000px!important;
   display: block !important;
   table-layout: unset !important;
   box-sizing: unset !important;

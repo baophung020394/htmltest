@@ -310,7 +310,7 @@ header .header__menu--mainmenu {
   z-index: 9999;
 }
 .carousel-home .owl-dots {
-  bottom: 120px;
+  bottom: 135px;
 }
 .carousel-information .owl-dots button span,
 .carousel-home .owl-dots button span {
@@ -1624,8 +1624,11 @@ header .header__menu--mid .menu-mobile .header__menu--item .icon-bot {
   display: block;
 }
 #fullpage .footer {
+  position: unset;
   padding-top: 60px;
   height: 1000px !important;
+  display: block !important;
+  table-layout: unset !important;
 }
 #fullpage .footer .footer__top--right .contact-us h2 {
   font-size: 36px;

@@ -367,7 +367,7 @@ header
 /* End Footer */
 .owl-item .item,
 section.carousels {
-  height: 100vh;
+  height: 85vh;
 }
 section.carousels .fp-tableCell,
 section.carousels.fp-section.fp-table {
@@ -377,9 +377,6 @@ section.carousels.fp-section.fp-table {
 .owl-carousel .owl-item,
 section.carousels .fp-tableCell {
   /* height: unset !important; */
-}
-.owl-carousel .owl-item img {
-  height: 100vh;
 }
 /* Home Beer */
 #home-beer {

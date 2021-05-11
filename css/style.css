@@ -297,6 +297,9 @@ header .header__menu--mainmenu {
   text-align: center;
   width: 100%;
 }
+.owl-item .item h1 {
+  bottom: 100px;
+}
 .carousel-information .owl-dots,
 .carousel-home .owl-dots {
   position: absolute;
@@ -304,6 +307,9 @@ header .header__menu--mainmenu {
   left: 50%;
   transform: translateX(-50%);
   z-index: 9999;
+}
+.carousel-home .owl-dots {
+  bottom: 60px;
 }
 .carousel-information .owl-dots button span,
 .carousel-home .owl-dots button span {
@@ -367,7 +373,7 @@ header
 /* End Footer */
 .owl-item .item,
 section.carousels {
-  height: 85vh;
+  height: 100vh;
 }
 section.carousels .fp-tableCell,
 section.carousels.fp-section.fp-table {
@@ -1459,8 +1465,8 @@ ul.hamburger {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 40px;
-  height: 40px;
+  width: 25px;
+  height: 25px;
   cursor: pointer;
   z-index: 9999;
 }
@@ -1878,6 +1884,9 @@ header .header__menu--mid {
   z-index: 99;
   line-height: 18px;
 }
+@media (max-width: 76px) { 
+  
+}
 @media (max-width: 1023px) {
   #menu {
     bottom: 10px;
@@ -1895,6 +1904,10 @@ header .header__menu--mid {
   }
 }
 @media (min-width: 768px) {
+  ul.hamburger { 
+    width: 30px;
+    height: 30px;
+  }
   header .header__menu--mid {
     position: unset;
   }
@@ -2155,6 +2168,10 @@ header .header__menu--mid {
 @media (min-width: 992px) {
 }
 @media (min-width: 1024px) {
+  ul.hamburger { 
+    width: 40px;
+    height: 40px;
+  }
   header .header__menu--mid .shop-btn {
     display: none;
   }

@@ -1629,6 +1629,7 @@ header .header__menu--mid .menu-mobile .header__menu--item .icon-bot {
   height: 1000px !important;
   display: block !important;
   table-layout: unset !important;
+  box-sizing: unset !important;
 }
 #fullpage .footer .footer__top--right .contact-us h2 {
   font-size: 36px;

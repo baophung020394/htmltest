@@ -120,10 +120,9 @@ header nav {
   padding: 0;
 }
 header .header__menu--mid .header__menu--mainmenu {
-  /* display: none; */
   transition: 0.4s;
-  background: rgba(21, 18, 9, 0.6);
-  backdrop-filter: blur(30px);
+  background: #000000;
+  opacity: 0.9;
   padding: 40px 40px;
 }
 header .header__menu--mid .header__menu--mainmenu.menu-mobile {
@@ -217,9 +216,9 @@ header .header__menu--mainmenu {
 .footer .footer__top .footer__top--left a.logo-chicken p {
   font-family: var(--font-family-NotoSerif);
   text-align: left;
-  /* padding-left: 10px; */
   font-size: 20px;
   line-height: 40px;
+  color: var(--color-text1);
 }
 .footer .footer__top--right .contact-us,
 .footer .footer__top--right .form-contact {
@@ -366,20 +365,21 @@ header
   height: 32px;
 }
 /* End Footer */
+.owl-item .item,
 section.carousels {
-  height: unset !important;
+  height: 100vh;
 }
 section.carousels .fp-tableCell,
 section.carousels.fp-section.fp-table {
-  display: block;
+  /* display: block; */
 }
 .owl-item .item,
 .owl-carousel .owl-item,
 section.carousels .fp-tableCell {
-  height: unset !important;
+  /* height: unset !important; */
 }
 .owl-carousel .owl-item img {
-  height: 85vh;
+  height: 100vh;
 }
 /* Home Beer */
 #home-beer {
@@ -662,13 +662,7 @@ section.carousels .fp-tableCell {
 }
 /* End Detail */
 /* Our Story */
-#menu {
-  position: fixed;
-  top: 15%;
-  left: 20px;
-  z-index: 99;
-  line-height: 18px;
-}
+
 #fullpagestory .section.ourstory {
   background-image: url(../img/ourstory-bg.png);
   background-size: cover;
@@ -1877,7 +1871,36 @@ header .header__menu--mid .menu-mobile .header__menu--item .icon-bot {
   background-color: #000;
   opacity: 0.9;
 }
+header .header__menu--mid {
+  position: relative;
+  left: -35px;
+}
+#menu {
+  position: fixed;
+  left: 20px;
+  z-index: 99;
+  line-height: 18px;
+}
+@media (max-width: 1023px) {
+  #menu {
+    bottom: 10px;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    border-top: 1px solid var(--color-text2);
+    border-bottom: 1px solid var(--color-text2);
+  }
+  #menu li::after {
+    content: none;
+  }
+}
 @media (min-width: 768px) {
+  header .header__menu--mid {
+    position: unset;
+  }
   #home-beer section .row {
     padding: 0 45px;
   }
@@ -2300,6 +2323,11 @@ header .header__menu--mid .menu-mobile .header__menu--item .icon-bot {
   #fullpagestory .section.ourteam .human .avt {
     height: 300px;
   }
+  header .header__menu--mid .header__menu--mainmenu {
+    background: rgba(21, 18, 9, 0.6);
+    backdrop-filter: blur(30px);
+    opacity: 1;
+  }
 }
 
 @media (min-width: 1200px) and (max-width: 1599px) {
@@ -2487,7 +2515,7 @@ header .header__menu--mid .menu-mobile .header__menu--item .icon-bot {
     margin: 0px 5px;
   }
   #fullpagestory .section.ourteam .human .avt {
-    height:450px
+    height: 450px;
   }
 }
 @media (min-width: 1440px) {
@@ -2516,7 +2544,6 @@ header .header__menu--mid .menu-mobile .header__menu--item .icon-bot {
   #form-18 .modal-content h2.heading {
     line-height: 60px;
   }
-  
 }
 @media (min-width: 1440px) and (max-width: 1599px) {
   .ourstorys .section .container {

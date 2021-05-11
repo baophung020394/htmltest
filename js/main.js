@@ -14,33 +14,48 @@ $(document).ready(() => {
       ).css("display", "flex");
     }
 
-    if (320 < $(window).width < 767) {
+    if ($(document).width() < 767) {
+      console.log("cc");
       if ($(window).scrollTop() > 4500) {
         $("#menu").addClass("hidden");
       } else {
         $("#menu").removeClass("hidden");
       }
-    }
-    if ($(window).scrollTop() > 3200) {
-      $("#menu").addClass("hidden");
+    } else if ($(document).width() < 1023) {
+      if ($(window).scrollTop() > 2500) {
+        $("#menu").addClass("hidden");
+      } else {
+        $("#menu").removeClass("hidden");
+      }
     } else {
-      $("#menu").removeClass("hidden");
+      if ($(window).scrollTop() > 3700) {
+        $("#menu").addClass("hidden");
+      } else {
+        $("#menu").removeClass("hidden");
+      }
     }
   });
 
-  if (320 < $(window).width < 767) {
+  if ($(document).width() < 767) {
+    console.log("cc");
     if ($(window).scrollTop() > 4500) {
       $("#menu").addClass("hidden");
     } else {
       $("#menu").removeClass("hidden");
     }
-  }
-  if ($(window).scrollTop() > 3200) {
-    $("#menu").addClass("hidden");
+  } else if ($(document).width() < 1023) {
+    if ($(window).scrollTop() > 2500) {
+      $("#menu").addClass("hidden");
+    } else {
+      $("#menu").removeClass("hidden");
+    }
   } else {
-    $("#menu").removeClass("hidden");
+    if ($(window).scrollTop() > 3700) {
+      $("#menu").addClass("hidden");
+    } else {
+      $("#menu").removeClass("hidden");
+    }
   }
-
   $("#home-beer .beer .beer__container .bg-beer .img-main").removeClass(
     "animation-lacbia"
   );
@@ -134,21 +149,21 @@ $(document).ready(() => {
       );
   });
 
-  $(window).on("load", function () {
-    setTimeout(function(){ $("#subscribe").modal("show"); }, 3000);
-    setTimeout(function(){ $("#form-18").modal("show"); }, 3000);
-    
-  });
-  $('#subscribe .btn-close').on('click', function() {
+  // $(window).on("load", function () {
+  //   setTimeout(function(){ $("#subscribe").modal("show"); }, 3000);
+  //   setTimeout(function(){ $("#form-18").modal("show"); }, 3000);
+
+  // });
+  $("#subscribe .btn-close").on("click", function () {
     $("#subscribe").modal("hide");
   });
-  $('#form-18 .btn-close').on('click', function() {
+  $("#form-18 .btn-close").on("click", function () {
     $("#form-18").modal("hide");
   });
-  $('#form-18 .group-button .btn-yes').on('click', function() {
+  $("#form-18 .group-button .btn-yes").on("click", function () {
     $("#form-18").modal("hide");
   });
-  $('#form-18 .group-button .btn-no').on('click', function() {
+  $("#form-18 .group-button .btn-no").on("click", function () {
     $("#form-18").modal("hide");
   });
 });

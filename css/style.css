@@ -222,7 +222,7 @@ header .header__menu--mainmenu {
   text-align: center;
   font-size: 20px;
   line-height: 40px;
-  color: var(--color-text1);
+  color: #fcf9e3;
 }
 .footer .footer__top--right .contact-us,
 .footer .footer__top--right .form-contact {
@@ -1327,7 +1327,7 @@ body:not(.home) .header__menu--mid .header__menu--mainmenu.menu-desk {
   min-height: 60px;
 }
 .footer .footer__top--right .form-contact .form-control input {
-  margin-bottom: 15px;
+  /* margin-bottom: 15px; */
 }
 .banner-container h1 {
   text-transform: uppercase;
@@ -2188,6 +2188,20 @@ header .header__menu--mid {
   #information-detail #other-blogs h1.promotionspercent,
   #fullpagepromotion #other-blogs h1.promotionspercent {
     font-size: 60px;
+  }
+  .footer .footer__top .footer__top--left a.logo-chicken img {
+    width: 274px;
+    height: 210px;
+  }
+  .footer .footer__top .footer__top--right p,
+  .footer .footer__top .footer__top--left a.logo-chicken p {
+    text-align: left;
+  }
+  .footer .footer__top--right .contact-us, .footer .footer__top--right .form-contact {
+    text-align: left;
+  }
+  .footer .footer__bottom {
+    text-align: left;
   }
 }
 @media (min-width: 992px) {

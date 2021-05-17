@@ -1643,7 +1643,7 @@ header .header__menu--mid .menu-mobile .header__menu--item .icon-bot {
 }
 #fullpage .footer {
   position: unset;
-  padding-top: 5.5rem;
+  padding-top: 4rem;
   display: block !important;
   table-layout: unset !important;
 }
@@ -1651,7 +1651,7 @@ header .header__menu--mid .menu-mobile .header__menu--item .icon-bot {
   font-size: 27px;
 }
 #fullpage .footer .footer__top .footer__top--left {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 #fullpage .footer .footer__top .footer__top--left a.logo-chicken p {
   line-height: 22px;
@@ -1661,7 +1661,7 @@ header .header__menu--mid .menu-mobile .header__menu--item .icon-bot {
   margin-bottom: 0;
 }
 #fullpage .footer .footer__top .footer__top--left a.logo-chicken {
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 #detail .other-beers,
 #detail .packs,

@@ -1643,7 +1643,7 @@ header .header__menu--mid .menu-mobile .header__menu--item .icon-bot {
 }
 #fullpage .footer {
   position: unset;
-  padding-top: 6rem;
+  padding-top: 5.5rem;
   display: block !important;
   table-layout: unset !important;
 }

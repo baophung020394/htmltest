@@ -2703,13 +2703,16 @@ header
   #fullpage .footer {
     padding-top: 11rem;
   }
-  #fullpage .footer .footer__top .footer__top--left a.logo-chicken {
+  #fullpage .footer .footer__top .footer__top--left a.logo-chicken,
+  .footer .footer__top .footer__top--left a.logo-chicken {
     margin-bottom: 50px;
   }
+  #fullpage .footer .footer__top .footer__top--left a.logo-chicken img, 
   .footer .footer__top .footer__top--left a.logo-chicken img {
     width: 200px;
     height:auto;
   }
+  #fullpage .footer .footer__top .footer__top--left a.logo-text img,
   .footer .footer__top .footer__top--left a.logo-text img {
     width:330px;
   }

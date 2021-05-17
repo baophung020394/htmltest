@@ -1126,7 +1126,7 @@ body.fp-viewing-footer #menu {
 /* End Community */
 /* Form Wanna Sell */
 .form-wanna {
-  padding: 60px 0 100px;
+  padding: 60px 0 0;
 }
 #form-wanna-sell {
   background-color: var(--color-text1);
@@ -1651,7 +1651,7 @@ header .header__menu--mid .menu-mobile .header__menu--item .icon-bot {
   font-size: 27px;
 }
 #fullpage .footer .footer__top .footer__top--left {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 #fullpage .footer .footer__top .footer__top--left a.logo-chicken p {
   line-height: 22px;
@@ -2061,6 +2061,13 @@ header
   top: 0;
   left: 140px;
   cursor: pointer;
+}
+header
+  .header__menu--mid
+  .header__menu--mainmenu.menu-mobile
+  li.header__menu--item
+  .submenu {
+  padding-left: 30px;
 }
 @media (max-width: 1023px) {
   #menu {
@@ -2671,27 +2678,27 @@ header
     padding: 0 150px;
   }
   header
-  .header__menu--mid
-  .header__menu--mainmenu.menu-mobile
-  li.header__menu--item
-  .fa-caret-down { 
+    .header__menu--mid
+    .header__menu--mainmenu.menu-mobile
+    li.header__menu--item
+    .fa-caret-down {
     display: none;
   }
+  header .header__menu--mid .header__menu--mainmenu.menu-mobile li,
   header
-  .header__menu--mid
-  .header__menu--mainmenu.menu-mobile li,
-  header
-  .header__menu--mid
-  .header__menu--mainmenu.menu-mobile
-  li.header__menu--item .submenu li {
+    .header__menu--mid
+    .header__menu--mainmenu.menu-mobile
+    li.header__menu--item
+    .submenu
+    li {
     margin-right: 0;
   }
   header
-  .header__menu--mid
-  .header__menu--mainmenu.menu-mobile
-  li.header__menu--item:hover .submenu {
+    .header__menu--mid
+    .header__menu--mainmenu.menu-mobile
+    li.header__menu--item:hover
+    .submenu {
     display: block;
-    padding-left: 30px;
   }
 }
 @media (min-width: 1366px) {
@@ -2730,14 +2737,14 @@ header
   .footer .footer__top .footer__top--left a.logo-chicken {
     margin-bottom: 50px;
   }
-  #fullpage .footer .footer__top .footer__top--left a.logo-chicken img, 
+  #fullpage .footer .footer__top .footer__top--left a.logo-chicken img,
   .footer .footer__top .footer__top--left a.logo-chicken img {
     width: 200px;
-    height:auto;
+    height: auto;
   }
   #fullpage .footer .footer__top .footer__top--left a.logo-text img,
   .footer .footer__top .footer__top--left a.logo-text img {
-    width:330px;
+    width: 330px;
   }
 }
 @media (min-width: 1400px) {

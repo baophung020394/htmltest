@@ -75,6 +75,8 @@ $(document).ready(() => {
     dots: true,
     nav: false,
     dotsEach: 1,
+    autoplayTimeout: 5000,
+    autoplay: true,
     responsive: {
       0: {
         items: 1,
@@ -95,6 +97,8 @@ $(document).ready(() => {
     dots: true,
     nav: false,
     dotsEach: 1,
+    autoplayTimeout: 5000,
+    autoplay: true,
     responsive: {
       0: {
         items: 1,
@@ -122,32 +126,32 @@ $(document).ready(() => {
   $(document).on("scroll", onScroll);
 
   //smoothscroll
-  $('a[href^="#"]').on("click", function (e) {
-    e.preventDefault();
-    $(document).off("scroll");
+  // $('a[href^="#"]').on("click", function (e) {
+  //   e.preventDefault();
+  //   $(document).off("scroll");
 
-    $("a").each(function () {
-      $(this).removeClass("active");
-    });
-    $(this).addClass("active");
+  //   $("a").each(function () {
+  //     $(this).removeClass("active");
+  //   });
+  //   $(this).addClass("active");
 
-    var target = this.hash,
-      menu = target;
-    $target = $(target);
-    $("html, body")
-      .stop()
-      .animate(
-        {
-          scrollTop: $target.offset().top + 2,
-        },
-        500,
-        "swing",
-        function () {
-          window.location.hash = target;
-          $(document).on("scroll", onScroll);
-        }
-      );
-  });
+  //   var target = this.hash,
+  //     menu = target;
+  //   $target = $(target);
+  //   $("html, body")
+  //     .stop()
+  //     .animate(
+  //       {
+  //         scrollTop: $target.offset().top + 2,
+  //       },
+  //       500,
+  //       "swing",
+  //       function () {
+  //         window.location.hash = target;
+  //         $(document).on("scroll", onScroll);
+  //       }
+  //     );
+  // });
 
   // $(window).on("load", function () {
   //   setTimeout(function(){ $("#subscribe").modal("show"); }, 3000);
@@ -165,6 +169,12 @@ $(document).ready(() => {
   });
   $("#form-18 .group-button .btn-no").on("click", function () {
     $("#form-18").modal("hide");
+  });
+
+  // Menu mobile Click
+  $("header .header__menu--mid .header__menu--mainmenu.menu-mobile li.header__menu--item i.fa-caret-down").on("click", function (e) {
+    console.log('cac');
+    $(this).find('~.submenu').slideToggle(250);
   });
 });
 

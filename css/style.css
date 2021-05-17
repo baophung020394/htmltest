@@ -110,10 +110,10 @@ header.header__menu {
   z-index: 9999;
 }
 header.header__menu {
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.5);
 }
 header.header__menu:hover {
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.5);
 }
 header nav {
   display: flex;
@@ -139,6 +139,9 @@ header .header__menu--mid .header__menu--mainmenu .shop-btn,
 header .header__menu--right .shop-btn {
   display: none;
 }
+header .header__menu--mainmenu li {
+  position: relative;
+}
 header .header__menu--mainmenu li a {
   font-family: var(--font-family-Eurostile);
   font-style: normal;
@@ -146,6 +149,7 @@ header .header__menu--mainmenu li a {
   font-size: 18px;
   line-height: 20px;
   text-transform: uppercase;
+  position: relative;
 }
 header .header__menu--left button {
   width: 45px;
@@ -325,10 +329,10 @@ header .header__menu--mainmenu {
   height: 21px;
   border-radius: 0;
   margin-right: 12px;
-  background-image: url(../img/chicken.png);
+  background: url(../img/chicken.png) no-repeat center center;
   display: inline-block;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-position: center;
 }
 .carousel-information .owl-dots button:last-child,
 .carousel-home .owl-dots button:last-child {
@@ -336,11 +340,13 @@ header .header__menu--mainmenu {
 }
 .carousel-information .owl-dots button.active span,
 .carousel-home .owl-dots button.active span {
-  background-image: url(../img/chicken-yellow.png);
+  background: url(../img/chicken-yellow.png) no-repeat center center;
+  background-size: cover;
+  background-position: center;
 }
-
-section.carousels {
-  /* height: 100vh; */
+.owl-dots {
+  min-width: 300px;
+  text-align: center;
 }
 .banner-container h1,
 section.carousels h1 {
@@ -439,6 +445,7 @@ section.carousels .fp-tableCell {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  cursor: pointer;
 }
 #home-beer .beer .beer__container .bg-beer {
   width: 278px;
@@ -641,6 +648,7 @@ section.carousels .fp-tableCell {
 
 .packs .img-packs {
   text-align: center;
+  cursor: pointer;
 }
 .packs .img-packs img {
   width: 201px;
@@ -650,7 +658,7 @@ section.carousels .fp-tableCell {
   font-style: normal;
   font-weight: bold;
   font-size: 68px;
-  color: var(--color-text3);
+  color: var(--color-text1);
   margin: 140px 0px 60px;
   text-transform: uppercase;
   text-align: center;
@@ -662,6 +670,7 @@ section.carousels .fp-tableCell {
 .other-beers .img-beers {
   text-align: center;
   margin-bottom: 30px;
+  cursor: pointer;
 }
 .other-beers {
   /* background-color: var(--color-text1); */
@@ -714,7 +723,7 @@ section.carousels .fp-tableCell {
   padding: 80px 15px;
 }
 #fullpagestory h2.heading {
-  font-family: var(--font-family-Eurostile);
+  font-family: var(--font-family-NotoSerif);
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
@@ -722,6 +731,7 @@ section.carousels .fp-tableCell {
   color: var(--color-text1);
   text-align: center;
   margin-bottom: 44px;
+  margin-top: 40px;
 }
 #fullpagestory .section p {
   font-family: var(--font-family-NotoSerif);
@@ -943,7 +953,7 @@ body.fp-viewing-footer #menu {
 .tab-content-information .infor-item h2.heading {
   font-family: var(--font-family-NotoSerif);
   font-weight: bold;
-  font-size: 34px;
+  font-size: 32px;
   text-transform: uppercase;
   color: #151209;
   margin: 20px 0px;
@@ -1307,10 +1317,11 @@ body.fp-viewing-footer #menu {
   background-color: var(--color-text1);
   padding-bottom: 100px;
 }
-body:not(.fp-viewing-first) header {
-  /* background-color: rgba(0, 0, 0, 0.8); */
+body header {
+  background-color: rgba(0, 0, 0, 0.8);
 }
-header .header__menu--mainmenu li:hover a {
+header .header__menu--mainmenu li:hover i,
+header .header__menu--mainmenu li:hover a:not(.item) {
   color: var(--color-text2);
 }
 .shop-btn img {
@@ -1319,9 +1330,9 @@ header .header__menu--mainmenu li:hover a {
   animation-duration: 1s; /* don't forget to set a duration! */
 }
 /* End Information Detail */
-body:not(.home) .header__menu--mid .header__menu--mainmenu.menu-desk {
+/* body:not(.home) .header__menu--mid .header__menu--mainmenu.menu-desk {
   display: none;
-}
+} */
 .btn-yellow,
 .footer .footer__top--right .form-contact .form-control input {
   min-height: 60px;
@@ -1418,10 +1429,10 @@ header .header__menu--mid .header__menu--mainmenu.menu-desk .button-close {
   display: none;
 }
 body:not(.home) .header__menu {
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.5);
 }
 body:not(.home) .header__menu:hover {
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.5);
 }
 .footer-policy .mousescroll span.mouse-animation {
   width: 30px;
@@ -1633,7 +1644,6 @@ header .header__menu--mid .menu-mobile .header__menu--item .icon-bot {
 #fullpage .footer {
   position: unset;
   padding-top: 60px;
-  height: 1000px !important;
   display: block !important;
   table-layout: unset !important;
 }
@@ -1653,12 +1663,19 @@ header .header__menu--mid .menu-mobile .header__menu--item .icon-bot {
 #fullpage .footer .footer__top .footer__top--left a.logo-chicken {
   margin-bottom: 5px;
 }
+#detail .other-beers,
 #detail .packs,
 #detail .top-header,
 #detail .content {
   position: relative;
 }
-
+#detail .other-beers .container,
+#detail .packs .container,
+#detail .content .container {
+  position: relative;
+  z-index: 999;
+}
+#detail .other-beers::before,
 #detail .packs::before,
 #detail .top-header::before,
 #detail .content::before {
@@ -1897,7 +1914,153 @@ header .header__menu--mid {
   z-index: 99;
   line-height: 18px;
 }
-@media (max-width: 76px) {
+#list-blogs {
+  background-color: var(--color-text1);
+}
+#list-blogs .media-box {
+  margin-bottom: 30px;
+}
+#list-blogs .media-box a {
+  display: block;
+}
+#list-blogs .media-box h2.heading {
+  font-family: var(--font-family-NotoSerif);
+  font-weight: 900;
+  font-size: 30px;
+  text-align: center;
+  color: var(--color-footer);
+  text-align: left;
+  margin: 8px 0;
+}
+#list-blogs .media-box .right span,
+#list-blogs .media-box .right p {
+  font-family: var(--font-family-NotoSerif);
+  font-size: 16px;
+  text-align: center;
+  color: var(--color-footer);
+  text-align: left;
+  margin: 8px 0;
+}
+header
+  .header__menu--mid
+  .header__menu--mainmenu.menu-desk
+  li.header__menu--item {
+  position: relative;
+  height: 85px;
+  line-height: 85px;
+}
+header
+  .header__menu--mid
+  .header__menu--mainmenu.menu-desk
+  li.header__menu--item
+  .submenu {
+  position: absolute;
+  top: 120px;
+  left: 0;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: 0.4s;
+  visibility: hidden;
+}
+header
+  .header__menu--mid
+  .header__menu--mainmenu.menu-desk
+  li.header__menu--item:hover
+  .submenu {
+  top: 85px;
+  visibility: visible;
+  opacity: 1;
+}
+
+header
+  .header__menu--mid
+  .header__menu--mainmenu.menu-desk
+  li.header__menu--item
+  .submenu
+  li {
+  width: 100%;
+  padding: 14px 20px;
+  line-height: 24px;
+}
+header
+  .header__menu--mid
+  .header__menu--mainmenu.menu-mobile
+  li.header__menu--item
+  .submenu
+  li:hover
+  a,
+header
+  .header__menu--mid
+  .header__menu--mainmenu.menu-desk
+  li.header__menu--item
+  .submenu
+  li:hover
+  a {
+  color: var(--color-text2);
+}
+header
+  .header__menu--mid
+  .header__menu--mainmenu.menu-mobile
+  li.header__menu--item
+  .submenu {
+  display: none;
+}
+header
+  .header__menu--mid
+  .header__menu--mainmenu.menu-mobile
+  li.header__menu--item
+  .submenu {
+  margin-bottom: -20px;
+}
+header
+  .header__menu--mid
+  .header__menu--mainmenu.menu-mobile
+  li.header__menu--item
+  .submenu
+  li
+  a {
+  padding: 15px 0;
+}
+header
+  .header__menu--mid
+  .header__menu--mainmenu.menu-desk
+  li.header__menu--item
+  .fa-caret-down,
+header
+  .header__menu--mid
+  .header__menu--mainmenu.menu-mobile
+  li.header__menu--item
+  .fa-caret-down {
+  font-size: 25px;
+  position: absolute;
+  top: -6px;
+  right: -23px;
+}
+header
+  .header__menu--mid
+  .header__menu--mainmenu.menu-desk
+  li.header__menu--item
+  .fa-caret-down {
+  cursor: pointer;
+  top: 46%;
+  transform: translateY(-50%);
+}
+.banner-child h1 {
+  cursor: pointer;
+}
+.banner-child h1:hover {
+  color: var(--color-text2);
+}
+
+header
+  .header__menu--mid
+  .header__menu--mainmenu.menu-mobile
+  li.header__menu--item
+  .fa-caret-down {
+  top: 0;
+  left: 140px;
+  cursor: pointer;
 }
 @media (max-width: 1023px) {
   #menu {
@@ -1957,7 +2120,7 @@ header .header__menu--mid {
     height: 100vh;
   }
   header.header__menu {
-    padding: 32px 0 30px;
+    padding: 32px 0 34px;
   }
   header .header__menu--mid .header__menu--logo {
     width: 450px;
@@ -1971,9 +2134,23 @@ header .header__menu--mid {
   header .header__menu--right {
     flex: unset;
   }
+  .carousel-information .owl-dots button span,
   .carousel-home .owl-dots button span {
-    width: 45px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+  }
+  .carousel-information .owl-dots button span {
+    /* width: 45px;
+    height: 50px; */
+  }
+  .owl-dots button.active span,
+  .carousel-information .owl-dots button.active span,
+  .carousel-home .owl-dots button.active span {
+    background-size: contain;
+  }
+  .carousel-information .owl-dots {
+    bottom: 100px;
   }
   .footer {
     padding: 4rem;
@@ -2010,10 +2187,10 @@ header .header__menu--mid {
     font-size: 48px;
   }
   .footer .footer__top .footer__top--right .contact-us {
-    margin-bottom: 79px;
+    margin-bottom: 0;
   }
   .footer .footer__top .footer__top--left {
-    align-items: flex-start;
+    align-items: center;
   }
   .footer .footer__top--right .form-contact {
     margin-bottom: 0;
@@ -2084,13 +2261,6 @@ header .header__menu--mid {
   .notification {
     padding: 60px;
   }
-  .carousel-information .owl-dots button span {
-    width: 45px;
-    height: 50px;
-  }
-  .carousel-information .owl-dots {
-    bottom: 100px;
-  }
   /* End Information */
   #information-detail .group-logo {
     width: 650px;
@@ -2098,6 +2268,7 @@ header .header__menu--mid {
     flex-direction: row;
     justify-content: space-between;
   }
+  #fullpage .footer .footer__top .footer__top--left a.logo-chicken,
   #fullpage .footer .footer__top .footer__top--left a.logo-chicken,
   .footer .footer__top .footer__top--left a.logo-chicken {
     margin-bottom: 100px;
@@ -2121,10 +2292,10 @@ header .header__menu--mid {
     left: -10px;
   }
   #fullpage .footer {
-    padding-top: 9rem;
+    padding-top: 18rem;
   }
   #fullpage .footer .footer__top--right .contact-us h2 {
-    font-size: 42px;
+    font-size: 48px;
   }
   #fullpage .footer .footer__top .footer__top--left {
     margin-bottom: 30px;
@@ -2134,9 +2305,6 @@ header .header__menu--mid {
   }
   #fullpage .footer .footer__top--right .contact-us {
     margin-bottom: 15px;
-  }
-  #fullpage .footer .footer__top .footer__top--left a.logo-chicken {
-    margin-bottom: 30px;
   }
   #home-beer .beer h2.heading img {
     width: 415px;
@@ -2177,14 +2345,9 @@ header .header__menu--mid {
   .packs .img-packs img {
     width: 100%;
   }
-  .owl-dots button.active span,
-  .carousel-information .owl-dots button.active span,
-  .carousel-home .owl-dots button.active span {
-    height: 51px;
-  }
-  body:not(.home) .header__menu {
+  /* body:not(.home) .header__menu {
     background: transparent;
-  }
+  } */
   #information-detail #other-blogs h1.promotionspercent,
   #fullpagepromotion #other-blogs h1.promotionspercent {
     font-size: 60px;
@@ -2197,11 +2360,15 @@ header .header__menu--mid {
   .footer .footer__top .footer__top--left a.logo-chicken p {
     text-align: left;
   }
-  .footer .footer__top--right .contact-us, .footer .footer__top--right .form-contact {
+  .footer .footer__top--right .contact-us,
+  .footer .footer__top--right .form-contact {
     text-align: left;
   }
   .footer .footer__bottom {
     text-align: left;
+  }
+  #list-blogs .media-box h2.heading {
+    margin-top: 0;
   }
 }
 @media (min-width: 992px) {
@@ -2237,7 +2404,6 @@ header .header__menu--mid {
     backdrop-filter: unset;
     width: 100%;
     padding: 0;
-    margin-top: 22px;
     z-index: 1;
     justify-content: center;
   }
@@ -2249,7 +2415,11 @@ header .header__menu--mid {
     a {
     color: var(--color-text1);
   }
-  header .header__menu--mid .header__menu--mainmenu.menu-desk li:hover a {
+  header
+    .header__menu--mid
+    .header__menu--mainmenu.menu-desk
+    li.header__menu--item:hover
+    a:not(.item) {
     color: var(--color-text2);
   }
   .header__menu--mid .header__menu--mainmenu .button-close {
@@ -2294,7 +2464,7 @@ header .header__menu--mid {
   }
   #fullpagestory h2.heading {
     text-align: left;
-    font-size: 70px;
+    font-size: 62px;
     line-height: 100px;
     margin-bottom: 5px;
   }
@@ -2343,15 +2513,15 @@ header .header__menu--mid {
     margin-left: 20px;
   }
   header .header__menu--mid .header__menu--mainmenu.menu-mobile {
-    padding: 120px 40px 40px 57px;
+    padding: 135px 40px 40px 57px;
   }
 
   #fullpagestory .section {
     /* min-height: 760px; */
     padding: 120px 15px;
   }
-  .ourstorys .section,
-  .ourstorys footer {
+  /* .ourstorys footer */
+  .ourstorys .section {
     height: 100vh;
   }
   #fullpagestory .section.ourteam {
@@ -2382,7 +2552,7 @@ header .header__menu--mid {
     opacity: 1;
   }
   header.header__menu {
-    background: transparent;
+    padding: 32px 0 0;
   }
 }
 
@@ -2456,6 +2626,13 @@ header .header__menu--mid {
   #fullpagestory .section.ourteam .human .avt {
     height: 400px;
   }
+  header
+    .header__menu--mid
+    .header__menu--mainmenu.menu-desk
+    li.header__menu--item
+    .fa-caret-down {
+    right: -28px;
+  }
 }
 @media (min-width: 1300px) {
   #home-beer .beer .beer__container .bg-beer:hover .img-sub {
@@ -2500,7 +2677,7 @@ header .header__menu--mid {
     max-width: 1300px;
   }
   #menu {
-    top: 17%;
+    top: 26%;
   }
   header .header__menu--mainmenu li {
     margin-right: 75px;
@@ -2522,6 +2699,12 @@ header .header__menu--mid {
 @media (min-width: 1366px) and (max-width: 1400px) {
   .footer .footer__top {
     margin-bottom: 19px;
+  }
+  #fullpage .footer {
+    padding-top: 11rem;
+  }
+  #fullpage .footer .footer__top .footer__top--left a.logo-chicken {
+    margin-bottom: 70px;
   }
 }
 @media (min-width: 1400px) {
@@ -2653,7 +2836,7 @@ header .header__menu--mid {
     margin-bottom: 114px;
   }
   #fullpagestory h2.heading {
-    font-size: 96px;
+    font-size: 70px;
   }
   #fullpagestory .section p {
     font-size: 24px;

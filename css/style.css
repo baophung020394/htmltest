@@ -2670,6 +2670,19 @@ header
   #form-wanna-sell h1 {
     padding: 0 150px;
   }
+  header
+  .header__menu--mid
+  .header__menu--mainmenu.menu-mobile
+  li.header__menu--item
+  .fa-caret-down { 
+    display: none;
+  }
+  header
+  .header__menu--mid
+  .header__menu--mainmenu.menu-mobile
+  li.header__menu--item:hover .submenu {
+    display: block;
+  }
 }
 @media (min-width: 1366px) {
   .container {

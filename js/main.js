@@ -172,7 +172,7 @@ $(document).ready(() => {
   });
 
   // Menu mobile Click
-  $("header .header__menu--mid .header__menu--mainmenu.menu-mobile li.header__menu--item a.dropdown").on("click", function (e) {
+  $("header .header__menu--mid .header__menu--mainmenu.menu-mobile li.header__menu--item .fa-caret-down").on("click", function (e) {
     $(this).find('~.submenu').slideToggle(250);
   });
 });

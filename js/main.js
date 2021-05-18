@@ -122,7 +122,7 @@ $(document).ready(() => {
 
   $(document).on("scroll", onScroll);
 
-  smoothscroll
+  //smoothscroll
   $('a[href^="#"]').on("click", function (e) {
     e.preventDefault();
     $(document).off("scroll");

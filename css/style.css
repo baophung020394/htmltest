@@ -811,7 +811,6 @@ section.carousels .fp-tableCell {
 }
 #blogs {
   background-color: var(--color-text1);
-  height: 100vh;
   padding: 60px 0;
 }
 #blogs .content {
@@ -1920,6 +1919,7 @@ header .header__menu--mid {
 }
 #list-blogs {
   background-color: var(--color-text1);
+  padding: 100px 0 60px;
 }
 #list-blogs .media-box {
   margin-bottom: 30px;
@@ -2382,6 +2382,13 @@ header
   #list-blogs .media-box h2.heading {
     margin-top: 0;
   }
+  #blogs {
+    height: 100vh;
+  }
+  #list-blogs {
+    background-color: var(--color-text1);
+    padding: 150px 0 60px;
+  } 
 }
 @media (min-width: 992px) {
 }

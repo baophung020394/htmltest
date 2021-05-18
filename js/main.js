@@ -2,7 +2,6 @@
 if (typeof App === "undefined") var App = {};
 $(document).ready(() => {
   $(window).scroll(function () {
-    var footerTop = $(".footer").height();
     var scroll = $(window).scrollTop();
     if (scroll > 0) {
       $(
@@ -15,7 +14,6 @@ $(document).ready(() => {
     }
 
     if ($(document).width() < 767) {
-      console.log("cc");
       if ($(window).scrollTop() > 4500) {
         $("#menu").addClass("hidden");
       } else {
@@ -37,7 +35,6 @@ $(document).ready(() => {
   });
 
   if ($(document).width() < 767) {
-    console.log("cc");
     if ($(window).scrollTop() > 4500) {
       $("#menu").addClass("hidden");
     } else {
@@ -125,33 +122,33 @@ $(document).ready(() => {
 
   $(document).on("scroll", onScroll);
 
-  //smoothscroll
-  // $('a[href^="#"]').on("click", function (e) {
-  //   e.preventDefault();
-  //   $(document).off("scroll");
+  smoothscroll
+  $('a[href^="#"]').on("click", function (e) {
+    e.preventDefault();
+    $(document).off("scroll");
 
-  //   $("a").each(function () {
-  //     $(this).removeClass("active");
-  //   });
-  //   $(this).addClass("active");
+    $("a").each(function () {
+      $(this).removeClass("active");
+    });
+    $(this).addClass("active");
 
-  //   var target = this.hash,
-  //     menu = target;
-  //   $target = $(target);
-  //   $("html, body")
-  //     .stop()
-  //     .animate(
-  //       {
-  //         scrollTop: $target.offset().top + 2,
-  //       },
-  //       500,
-  //       "swing",
-  //       function () {
-  //         window.location.hash = target;
-  //         $(document).on("scroll", onScroll);
-  //       }
-  //     );
-  // });
+    var target = this.hash,
+      menu = target;
+    $target = $(target);
+    $("html, body")
+      .stop()
+      .animate(
+        {
+          scrollTop: $target.offset().top + 2,
+        },
+        500,
+        "swing",
+        function () {
+          window.location.hash = target;
+          $(document).on("scroll", onScroll);
+        }
+      );
+  });
 
   // $(window).on("load", function () {
   //   setTimeout(function(){ $("#subscribe").modal("show"); }, 3000);

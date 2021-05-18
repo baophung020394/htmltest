@@ -723,7 +723,7 @@ section.carousels .fp-tableCell {
   padding: 80px 15px;
 }
 #fullpagestory h2.heading {
-  font-family: var(--font-family-NotoSerif);
+  font-family: var(--font-family-Eurostile);
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
@@ -736,7 +736,6 @@ section.carousels .fp-tableCell {
 #fullpagestory .section p {
   font-family: var(--font-family-NotoSerif);
   font-style: normal;
-  font-weight: normal;
   font-size: 16px;
   line-height: 30px;
   color: var(--color-text1);
@@ -812,6 +811,8 @@ section.carousels .fp-tableCell {
 }
 #blogs {
   background-color: var(--color-text1);
+  height: 100vh;
+  padding: 60px 0;
 }
 #blogs .content {
   padding: 15px;
@@ -859,6 +860,7 @@ section.carousels .fp-tableCell {
   text-align: center;
 }
 #information-detail #other-blogs h2.heading,
+.brewery-tour h2.heading,
 #other-blogs h2.heading {
   font-style: normal;
   font-weight: bold;
@@ -959,7 +961,7 @@ body.fp-viewing-footer #menu {
   margin: 20px 0px;
 }
 .tab-content-information .infor-item p {
-  font-family: Noto Serif;
+  font-family: 'Noto Serif';
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -998,6 +1000,7 @@ body.fp-viewing-footer #menu {
 }
 .information-bottom {
   padding: 60px 0;
+  margin: 60px 0;
 }
 .information-bottom .item-bottom figure {
   margin: 0;
@@ -1010,6 +1013,7 @@ body.fp-viewing-footer #menu {
   text-align: center;
   background-color: var(--color-text2);
   padding: 15px;
+  margin: 0 0 60px;
 }
 .notification h4 {
   font-family: var(--font-family-NotoSerif);
@@ -2250,6 +2254,7 @@ header
   #other-blogs .blog-item .item h2 {
     padding: 0 15px;
   }
+  .brewery-tour h2.heading,
   #other-blogs h2.heading {
     font-size: 72px;
   }
